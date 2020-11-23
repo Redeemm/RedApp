@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kk">
+
+    <Button
+        android:id="@+id/btn_next4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn"
+        android:text="@string/next"
+        android:textColor="@color/colorMain_Orange_Deep"
+        android:textSize="20sp"
+        app:backgroundTint=""
+        app:backgroundTintMode="screen"
+        app:iconTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/Layout_relative_2"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="52dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next4"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/Layout_relative_2"
+        app:layout_constraintVertical_bias="0.459"
+        app:srcCompat="@drawable/abc_vector_test"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <RelativeLayout
+        android:id="@+id/Layout_relative_3"
+        android:layout_width="0dp"
+        android:layout_height="423dp"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="36dp">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:width="347dp"
+            android:background="@drawable/txv_field"
+            android:drawablePadding="16dp"
+            android:minHeight="56dp"
+            android:text="@string/driver_s_license" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:width="347dp"
+            android:background="@drawable/txv_field"
+            android:drawablePadding="16dp"
+            android:minHeight="56dp"
+            android:text="@string/voter_id" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:width="347dp"
+            android:background="@drawable/txv_field"
+            android:drawablePadding="16dp"
+            android:minHeight="56dp"
+            android:text="@string/nhia_membership" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:width="347dp"
+            android:background="@drawable/txv_field"
+            android:drawablePadding="16dp"
+            android:minHeight="56dp"
+            android:text="@string/passport" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:width="347dp"
+            android:background="@drawable/txv_field"
+            android:drawablePadding="16dp"
+            android:minHeight="56dp"
+            android:text="@string/national_id" />
+
+        <EditText
+            android:id="@+id/ed_ID_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/id_type_select_one"
+            android:textColor="@color/colorGrey"
+            android:textSize="30sp"
+            android:autofillHints="ID type (select one)" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_relative_2"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/Layout_relative_3"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/ed_ID_number"
+            android:layout_width="347dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:autofillHints=""
+            android:background="@drawable/txv_field"
+            android:ems="10"
+            android:hint="@string/id_number"
+            android:inputType="number|phone"
+            android:padding="16dp"
+            android:paddingEnd="50dp"
+            android:paddingRight="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvPassword"
+            tools:ignore="LabelFor,NotSibling,RtlCompat,RtlSymmetry,UnknownIdInLayout" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
