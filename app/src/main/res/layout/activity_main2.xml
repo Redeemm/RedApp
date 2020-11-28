@@ -6,20 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="52dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/background"
-        app:layout_constraintBottom_toTopOf="@+id/Layout_relative_2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline10"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571"
-        app:srcCompat="@drawable/abc_vector_test"
-        tools:ignore="MissingConstraints" />
+
 
     <Button
         android:id="@+id/btn_next5"

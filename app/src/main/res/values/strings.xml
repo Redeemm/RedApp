@@ -3,9 +3,9 @@
     <string name="next">Next</string>
     <string name="first_name">First name</string>
     <string name="surname">Surname</string>
-    <string name="phone">phone</string>
+    <string name="phone">Phone</string>
     <string name="re_type_password">re-type password</string>
-    <string name="email">email</string>
+    <string name="email">Email</string>
     <string name="password">password</string>
     <string name="id_type_select_one">ID type (select one)</string>
     <string name="driver_s_license">Driver License</string>
@@ -30,4 +30,6 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="phone_number">Phone number</string>
     <string name="voter_id">Voter ID</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome</string>
 </resources>

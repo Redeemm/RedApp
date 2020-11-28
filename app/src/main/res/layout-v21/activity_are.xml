@@ -30,8 +30,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/white"
-            android:paddingRight="60dp"
-            android:src="@drawable/ic_baseline_arrow_back_24" />
+            android:paddingEnd="60dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/textView"
@@ -41,7 +42,7 @@
             android:background="@color/white"
             android:gravity="center"
             android:letterSpacing="0.05"
-            android:paddingRight="150dp"
+            android:paddingEnd="150dp"
             android:text="@string/sign_up"
             android:textColor="@color/black"
             android:textSize="27sp"
@@ -65,15 +66,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/Layout_relative_2"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintTop_toBottomOf="@+id/Layout_relative_2" />
 
 
     <RelativeLayout
         android:id="@+id/Layout_relative_2"
         android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/elevation_bg"
         android:elevation="10dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
@@ -105,6 +105,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
+                android:autofillHints=""
                 android:hint="@string/phone_number"
                 android:inputType="phone"
                 android:maxLength="9"
@@ -119,11 +120,13 @@
         android:id="@+id/Layout_relative"
         android:layout_width="0dp"
         android:layout_height="248dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/Layout_relative_2"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/action_bar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="MissingConstraints">
 
         <EditText
@@ -132,20 +135,16 @@
             android:layout_height="54dp"
             android:layout_below="@+id/txvPassword"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginStart="11dp"
-            android:layout_marginLeft="11dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
             android:layout_marginBottom="20dp"
             android:autofillHints=""
             android:background="@drawable/elevation_bg"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
             android:drawablePadding="10dp"
-            android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
             android:elevation="10dp"
             android:ems="10"
             android:hint="@string/re_type_password"
@@ -154,27 +153,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:drawableStart="@drawable/ic_baseline_lock_24"
-            android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/txvEmailAddress"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginStart="11dp"
-            android:layout_marginLeft="11dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="14dp"
-            android:layout_marginRight="14dp"
             android:autofillHints=""
             android:background="@drawable/elevation_bg"
-            android:drawableLeft="@drawable/ic_gmail"
+            android:drawableStart="@drawable/ic_gmail"
             android:drawablePadding="10dp"
             android:elevation="10dp"
             android:ems="10"
@@ -182,11 +175,10 @@
             android:inputType="textEmailAddress"
             android:padding="16dp"
             android:paddingEnd="50dp"
-            android:paddingRight="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/imageButton2"
             app:layout_constraintTop_toBottomOf="@+id/txvPassword"
             tools:ignore="LabelFor,NotSibling,RtlCompat,RtlSymmetry" />
 
@@ -196,19 +188,15 @@
             android:layout_height="54dp"
             android:layout_below="@+id/txvEmailAddress"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginStart="11dp"
-            android:layout_marginLeft="11dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
             android:autofillHints=""
             android:background="@drawable/elevation_bg"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
             android:drawablePadding="10dp"
-            android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
             android:elevation="10dp"
             android:ems="10"
             android:hint="@string/password"
@@ -236,5 +224,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="369dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_undraw_accept_request_re_d81h"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
